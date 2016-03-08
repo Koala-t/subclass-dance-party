@@ -1,5 +1,4 @@
 var MorphyDancer = function (top, left, timeBetweenSteps) {
-    alert('hi');
   Dancer.call(this, top, left, timeBetweenSteps);
 
 };

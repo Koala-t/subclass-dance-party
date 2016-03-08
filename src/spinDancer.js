@@ -14,6 +14,9 @@ SpinDancer.prototype.step = function (timeBetweenSteps) {
 
   Dancer.prototype.step.call(this, timeBetweenSteps);
 
-  this.$node.toggleClass("spinMove");
+  this.$node.animate({
+    top: "+=110px",
+    left: "+=30px"
+  });
 
 };
