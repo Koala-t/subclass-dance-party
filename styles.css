@@ -3,11 +3,12 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url("http://www.mrwallpaper.com/wallpapers/metro-subway-1600x900.jpg");
+  background-size: 100% auto;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: magenta;
 }
 .title, .addDancerButton{
   padding:5px 12px;
@@ -15,20 +16,23 @@ body, a:link, a:visited, a:active{
 }
 .topbar{
   height:32px;
-  background-color: #555;
+  background-color: black;
 }
 .title{
-  background-color: #777;
+  background-color: purple;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:7px;
+ /* border:10px solid red;
+  border-radius:7px;*/
   position:absolute;
 }
 
 .morphy{
-  border:10px solid blue;
+  border:10px solid red;
   border-radius: 1px;
   position:absolute;
 }
 
+.turtle{
+  background-image: url("http://31.media.tumblr.com/2eb808bd6a3cb4f005c989a80ca7d539/tumblr_mmzvm6zpHl1soog04o1_500.gif");
+}

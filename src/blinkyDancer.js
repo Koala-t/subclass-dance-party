@@ -21,5 +21,6 @@ BlinkyDancer.prototype.step = function(timeBetweenSteps) {
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
-  this.$node.toggle();
+  this.$node.css({"content": "url(http://31.media.tumblr.com/2eb808bd6a3cb4f005c989a80ca7d539/tumblr_mmzvm6zpHl1soog04o1_500.gif)"});
+  // this.$node.toggle();
 };
