@@ -12,6 +12,15 @@ var Dancer = function(top, left, timeBetweenSteps) {
 
 
 
+Dancer.prototype.lineup = function () {
+
+  this.$node.animate({
+    // top: 20,
+    left: 20
+  });
+
+};
+
 
 Dancer.prototype.setPosition = function(top, left) {
   // Use css top and left properties to position our <span> tag

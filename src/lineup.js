@@ -1,16 +1,11 @@
 var lineup = function () {
-  console.log('called');
-  var counter = 10;
+  // var counter = 10;
   for (var i = 0; i < dancers.length; i++) {
     var item = dancers[i];
-    console.log(item);
 
-    item.$node.animate({
-      top: counter,
-      left: 20
-    });
+    item.lineup();
 
-    counter += 20;
+    // counter += 20;
   }
 
 };
