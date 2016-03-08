@@ -1,6 +1,6 @@
 var SpinDancer = function (top, left, timeBetweenSteps) {
 
-  
+  this.location = "first";
   Dancer.call(this, top, left, timeBetweenSteps);
 
 };
@@ -15,25 +15,23 @@ SpinDancer.prototype.step = function (timeBetweenSteps) {
 
   Dancer.prototype.step.call(this, timeBetweenSteps);
 
-  // if (this.location === 'first'){
-    // console.log(this.$node.top);
+  if (this.location === 'first'){
   this.$node.animate({
     top:  "+=20px",
     left: "+=40px"
   });
-    // this.location = 'second';
-  
-  // }
 
-  // if (this.location === 'second') {
-    
-  //   this.$node.animate({
-  //     top: "-=110px",
-  //     left: "-=30px"
-  //   });
+    this.location = 'second';
+  }
 
-  //   this.location = 'first';
-  // }
+  if (this.location === 'second') {
+    this.$node.animate({
+      top: "-=20px",
+      left: "-=40px"
+    });
+
+    this.location = 'first';
+  }
 
 
 };
