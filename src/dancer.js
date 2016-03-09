@@ -40,7 +40,33 @@ Dancer.prototype.setPosition = function(top, left) {
   this.$node.css(styleSettings);
 };
 
+//invoke when morphyDancer (pizza-party) is clicked
+Dancer.prototype.Pizza = function (turtles) {
+  var closestTurtle;
+  var theParty = dancers[dancers.length - 1];
+  //get the top and left properties from the input-array
+  var distance = [];
+  for (var i = 0; i < turtles.length; i++) {
+    var turtle = turtles[i];
+    //get the difference in x squared and y squared 
+    distance.push(
+      Math.sqrt(
+        Math.pow(Math.abs(turtle.left - theParty.left), 2) + 
+        Math.pow(Math.abs(turtle.top - theParty.top), 2) 
+      )
+    //add them then get the square root
+    //push the results into distance 
+    );
+    //take the index of the lowest value in distance at the end
 
+
+    
+
+    console.log('distance', distance);
+    console.log('turtle', turtle);
+    console.log('this', dancers[dancers.length-1]);
+  }
+};
 
 
 

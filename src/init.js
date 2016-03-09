@@ -34,15 +34,14 @@ $(document).ready(function() {
 
       $('body').append(dancer.$node);
 
-
       window.dancers.push(dancer);
 
+      if (dancerMakerFunctionName === "MorphyDancer") {
+        pizza();
+      }
     } // end of else
 
   }); // end of on-click
-      $(this).on("mouseover",function(){ 
-        alert("hi");
-      });
 
 });
 
