@@ -34,10 +34,15 @@ $(document).ready(function() {
 
       $('body').append(dancer.$node);
 
+
       window.dancers.push(dancer);
+
     } // end of else
 
   }); // end of on-click
-  
+      $(this).on("mouseover",function(){ 
+        alert("hi");
+      });
+
 });
 
