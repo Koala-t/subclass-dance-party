@@ -72,7 +72,7 @@ Dancer.prototype.Pizza = function (turtles) {
     turtles[index].$node.animate({
       top: targetTop,
       left: targetLeft
-    });
+    }, 5000);
 
 
     console.log('distance', distance);
