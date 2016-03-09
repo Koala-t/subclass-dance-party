@@ -54,13 +54,26 @@ Dancer.prototype.Pizza = function (turtles) {
         Math.pow(Math.abs(turtle.left - theParty.left), 2) + 
         Math.pow(Math.abs(turtle.top - theParty.top), 2) 
       )
-    //add them then get the square root
-    //push the results into distance 
-    );
+    ); // end of distance.push
     //take the index of the lowest value in distance at the end
 
+    var lowest = distance[0];
+    var index;
+    for (var i = 0; i < distance.length; i++) {
+      if (lowest >= distance[i]) {
+        lowest = distance[i];
+        index = i;
+      }
+    }
 
-    
+    var targetLeft = theParty.left; 
+    var targetTop = theParty.top + 50;
+
+    turtles[index].$node.animate({
+      top: targetTop,
+      left: targetLeft
+    });
+
 
     console.log('distance', distance);
     console.log('turtle', turtle);
